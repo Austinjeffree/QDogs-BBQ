@@ -1,45 +1,45 @@
 /* google fonts imported for design */
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
 
-/* CSS below this line will impact all pages 
-nav {
-    display: grid;
-    grid-template-rows: 127px;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: ;
+/* CSS below this line will impact all pages */
 
-}
-*/
 header {
     display: flex;
     justify-content: center;
-    background-color: aqua;
 
 }
 #logo {
     width: auto;
     height: 125px;
-    align-self: flex-start;
     
 }
 nav {
     display: flex;
+    flex-direction: column;
     font-family: 'Fredericka the Great', cursive;
+    font-size: 22px;
     justify-content: center;
-    font-size: 1.15em;
     align-items: center;
-    margin-left: 50px;
-}
+    min-width: 150px;
+} 
 
-#menu {
-    align-self: flex-start;
-    position: absolute;
-}
-#catering { 
-    align-self: flex-end;
-    position: absolute;
+nav>h1 {
+    font-size: 35px;
+    align-self: center;
 }
 
 
 
 /* CSS below this line will impact home page only */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+}
+main>figure>img {
+    width: 100%;
+    height: auto;
+}
