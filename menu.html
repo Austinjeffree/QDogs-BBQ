@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -16,384 +17,386 @@
             </nav>
         </header>
         <!-- Content above this needs to remain the same each page (excluding the header/varies by page)-->
-        <div class="tab">
-            <!--Buttons found within the tab bar// has JS function attached to onclick-->
-            <button class="tablinks" onclick="openMenu(event, 'starters')">Starters</button>
-            <button class="tablinks" onclick="openMenu(event, 'sammiches')">Sammiches</button>
-            <button class="tablinks" onclick="openMenu(event, 'meals')">Meals</button>
-            <button class="tablinks" onclick="openMenu(event, 'yummies')">Other Yummies</button>
-            <button class="tablinks" onclick="openMenu(event, 'QPups')">QPups</button>
-            <button class="tablinks" onclick="openMenu(event, 'sidesDesserts')">Sides & Desserts</button>
-            <button class="tablinks" onclick="openMenu(event, 'drinks')">Drinks</button>
-        </div>
+        <main id="menuFlex">
+            <div class="tab">
+                <!--Buttons found within the tab bar// has JS function attached to onclick-->
+                <button class="tablinks" onclick="openMenu(event, 'starters')">Starters</button>
+                <button class="tablinks" onclick="openMenu(event, 'sammiches')">Sammiches</button>
+                <button class="tablinks" onclick="openMenu(event, 'meals')">Meals</button>
+                <button class="tablinks" onclick="openMenu(event, 'yummies')">Other Yummies</button>
+                <button class="tablinks" onclick="openMenu(event, 'QPups')">QPups</button>
+                <button class="tablinks" onclick="openMenu(event, 'sidesDesserts')">Sides & Desserts</button>
+                <button class="tablinks" onclick="openMenu(event, 'drinks')">Drinks</button>
+            </div>
 
-        <!-- content for buttons clicked, ID must match the second parameter in the openMenu function
-        to corresponding button to work correctly-->
-        <article id="starters" class="tabcontent">
-            <h2>Starters</h2>
-            <section>
-                <h3>BBQ Egg Rolls</h3>
-                <p>
-                    Four BBQ egg rolls made with pulled pork and 
-                    shredded cabbage tossed in our asian inspired 
-                    sauce wrapped in egg roll wrappers and fried 
-                    to perfection. Served with raspberry chipotle 
-                    dipping sauce. <strong>$8.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>ABTs</h3>
-                <p>
-                    Four slow smoked jalapeno halves stuffed with
-                    a blend of cheeses topped with a chunk
-                    of brisket and wrapped in bacon. <strong>$8.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>ABTs & Egg Rolls</h3>
-                <p>
-                    Two BBQ Egg Rolls and two ABTs. <strong>$8.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Fresh Local Cheese Curds</h3>
-                <p>
-                    Made up the street at Homestead Dairy
-                    these white cheese curds are fried to a
-                    light golden brown. A must try!<br />
-                    <strong>Full $8.49 | Half $5.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Smoked Buffalo Chicken Ragoon's</h3>
-                <p>
-                    Five ragoons made up of a hearty mix of smoked chicken, 
-                    cheeses and buffalo sauce wrapped in wontons fried 
-                    crispy brown and served with a chipotle raspberry 
-                    dipping sauce. <strong>$7.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Fresh BBQ Frips</h3>
-                <p>
-                    Fresh fried potato frips dusted with BBQ
-                    seasoning and served with house made
-                    french onion dip. <strong>$6.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Memphis Cheese Plate</h3>
-                <p>
-                    A Beale Street favorite, Smoked hot link
-                    sausages, sliced and served with a variety
-                    of cheese cubes, pepperoncini peppers
-                    and crackers. Finished with a dusting of
-                    our pork rub. <strong>$8.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Smoked Buffalo Garlic Wings</h3>
-                <p>
-                    Cherry smoked wings crispy fried to
-                    perfection. Try the naked garlic or tossed
-                    in our house made garlic buffalo sauce.<br />
-                    <strong>Ten $11.99 | Five $6.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Pulled Pork Sliders</h3>
-                <p>
-                    Juicy Pulled pork stacked on a Hawaiian
-                    roll. <br /> 
-                    <strong>Three $7.99 | Additional $2.49 each</strong>
-                </p>
-            </section>
-            <section>
-                <h3>BBQ Nachos</h3>
-                <p>
-                    Fresh Fried Tortilla chips topped with
-                    pulled pork or brisket and doused with
-                    our house sauce and topped with nacho
-                    cheese sauce and jalapenos.<br />
-                    <strong>Pork: Full $9.49 | Half $5.99<br />
-                    Brisket: Full $11.49 | Half $7.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Fried Dill Pickles</h3>
-                <p>
-                    Thick cut kosher dill pickle chips lightly
-                    breaded and fried to perfection. Served
-                    with our house made ranch.<br />
-                    <strong>Full $7.29 | Half $4.79</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Onion Rings</h3>
-                <p>
-                    Beer Battered onion rings served with our
-                    cajun dipping sauce. <strong>$7.99</strong>
-                </p>
-            </section>
-        </article>
+            <!-- content for buttons clicked, ID must match the second parameter in the openMenu function
+            to corresponding button to work correctly-->
+            <article id="starters" class="tabcontent">
+                <h2>Starters</h2>
+                <section>
+                    <h3>BBQ Egg Rolls</h3>
+                    <p>
+                        Four BBQ egg rolls made with pulled pork and 
+                        shredded cabbage tossed in our asian inspired 
+                        sauce wrapped in egg roll wrappers and fried 
+                        to perfection. Served with raspberry chipotle 
+                        dipping sauce. <strong>$8.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>ABTs</h3>
+                    <p>
+                        Four slow smoked jalapeno halves stuffed with
+                        a blend of cheeses topped with a chunk
+                        of brisket and wrapped in bacon. <strong>$8.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>ABTs & Egg Rolls</h3>
+                    <p>
+                        Two BBQ Egg Rolls and two ABTs. <strong>$8.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Fresh Local Cheese Curds</h3>
+                    <p>
+                        Made up the street at Homestead Dairy
+                        these white cheese curds are fried to a
+                        light golden brown. A must try!<br />
+                        <strong>Full $8.49 | Half $5.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Smoked Buffalo Chicken Ragoon's</h3>
+                    <p>
+                        Five ragoons made up of a hearty mix of smoked chicken, 
+                        cheeses and buffalo sauce wrapped in wontons fried 
+                        crispy brown and served with a chipotle raspberry 
+                        dipping sauce. <strong>$7.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Fresh BBQ Frips</h3>
+                    <p>
+                        Fresh fried potato frips dusted with BBQ
+                        seasoning and served with house made
+                        french onion dip. <strong>$6.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Memphis Cheese Plate</h3>
+                    <p>
+                        A Beale Street favorite, Smoked hot link
+                        sausages, sliced and served with a variety
+                        of cheese cubes, pepperoncini peppers
+                        and crackers. Finished with a dusting of
+                        our pork rub. <strong>$8.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Smoked Buffalo Garlic Wings</h3>
+                    <p>
+                        Cherry smoked wings crispy fried to
+                        perfection. Try the naked garlic or tossed
+                        in our house made garlic buffalo sauce.<br />
+                        <strong>Ten $11.99 | Five $6.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Pulled Pork Sliders</h3>
+                    <p>
+                        Juicy Pulled pork stacked on a Hawaiian
+                        roll. <br /> 
+                        <strong>Three $7.99 | Additional $2.49 each</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>BBQ Nachos</h3>
+                    <p>
+                        Fresh Fried Tortilla chips topped with
+                        pulled pork or brisket and doused with
+                        our house sauce and topped with nacho
+                        cheese sauce and jalapenos.<br />
+                        <strong>Pork: Full $9.49 | Half $5.99<br />
+                        Brisket: Full $11.49 | Half $7.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Fried Dill Pickles</h3>
+                    <p>
+                        Thick cut kosher dill pickle chips lightly
+                        breaded and fried to perfection. Served
+                        with our house made ranch.<br />
+                        <strong>Full $7.29 | Half $4.79</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Onion Rings</h3>
+                    <p>
+                        Beer Battered onion rings served with our
+                        cajun dipping sauce. <strong>$7.99</strong>
+                    </p>
+                </section>
+            </article>
 
-        <article id="sammiches" class="tabcontent">
-            <h2>Sammiches</h2>
-            <p><em>All Sammiches come with one side. <br />
-                Add a sausage for 2.99 or 2 bones 3.99</em></p>
-            <section>
-                <h3>Pulled Pork Sammich</h3>
-                <p>
-                    Third pound of our cherry smoked pulled
-                    pork and you add the sauce <strong>$7.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Junkyard Dog</h3>
-                <p>
-                    Best of both worlds piled high with pulled
-                    pork on top of sliced Brisket. <strong>$9.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>QDog - The Pitmaster's favorite!</h3>
-                <p>
-                    Cherry smoked pulled pork, drizzled with
-                    our house dog sauce and topped with
-                    apple cider slaw. <strong>$8.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Brisket Sammich</h3>
-                <p>
-                    Third pound of our slow smoked hand
-                    rubbed competition brisket. This is a
-                    must try if you have been searching for
-                    juicy authentic cooked brisket <strong>$10.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Texas Style Hot Link</h3>
-                <p>
-                    A spicy hot link sausage served on a
-                    stadium style bun. Try the mustard sauce
-                    on this! <strong>$7.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Briskey Philly</h3>
-                <p>
-                    Sliced Brisket topped with caramelized
-                    onions and mushrooms and topped with
-                    swiss cheese served on a hoagie bun.
-                    <strong>$10.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Smother Pork - A joint favorite!</h3>
-                <p>
-                    Our cherry smoked pulled pork drizzled
-                    with our spicy dog sauce and smothered
-                    in cheese sauce and topped with
-                    jalapenos. <strong>$8.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Bacon Wrapped Sausage Link</h3>
-                <p>
-                    An Italian sausage link wrapped in bacon
-                    and slow smoked and served on a
-                    stadium style bun. <strong>$7.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Stuffed Sausage Melt</h3>
-                <p>
-                    A Split Hot Link, grilled and topped with
-                    pulled pork, mustard sauce drizzle,
-                    sautéed onions and melted swiss cheese
-                    served on a toasted hogie bun. <strong>$9.99</strong>
-                </p>
-            </section>
-        </article>
+            <article id="sammiches" class="tabcontent">
+                <h2>Sammiches</h2>
+                <p><em>All Sammiches come with one side. <br />
+                    Add a sausage for 2.99 or 2 bones 3.99</em></p>
+                <section>
+                    <h3>Pulled Pork Sammich</h3>
+                    <p>
+                        Third pound of our cherry smoked pulled
+                        pork and you add the sauce <strong>$7.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Junkyard Dog</h3>
+                    <p>
+                        Best of both worlds piled high with pulled
+                        pork on top of sliced Brisket. <strong>$9.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>QDog - The Pitmaster's favorite!</h3>
+                    <p>
+                        Cherry smoked pulled pork, drizzled with
+                        our house dog sauce and topped with
+                        apple cider slaw. <strong>$8.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Brisket Sammich</h3>
+                    <p>
+                        Third pound of our slow smoked hand
+                        rubbed competition brisket. This is a
+                        must try if you have been searching for
+                        juicy authentic cooked brisket <strong>$10.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Texas Style Hot Link</h3>
+                    <p>
+                        A spicy hot link sausage served on a
+                        stadium style bun. Try the mustard sauce
+                        on this! <strong>$7.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Briskey Philly</h3>
+                    <p>
+                        Sliced Brisket topped with caramelized
+                        onions and mushrooms and topped with
+                        swiss cheese served on a hoagie bun.
+                        <strong>$10.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Smother Pork - A joint favorite!</h3>
+                    <p>
+                        Our cherry smoked pulled pork drizzled
+                        with our spicy dog sauce and smothered
+                        in cheese sauce and topped with
+                        jalapenos. <strong>$8.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Bacon Wrapped Sausage Link</h3>
+                    <p>
+                        An Italian sausage link wrapped in bacon
+                        and slow smoked and served on a
+                        stadium style bun. <strong>$7.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Stuffed Sausage Melt</h3>
+                    <p>
+                        A Split Hot Link, grilled and topped with
+                        pulled pork, mustard sauce drizzle,
+                        sautéed onions and melted swiss cheese
+                        served on a toasted hogie bun. <strong>$9.99</strong>
+                    </p>
+                </section>
+            </article>
 
-        <article id="meals" class="tabcontent">
-            <h2>Meals</h2>
-            <p><em>Comes with two sides and corn bread.<br />
-                Add a sausage for 2.99 or two bones for 3.99</em></p>
-            <section>
-                <h3>Pulled Pork</h3>
-                <p>
-                    Half pound of or our slow smoked pulled
-                    pork <strong>$10.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Chicken Legs & Thighs</h3>
-                <p>
-                    Lightly dusted with our garlic rub and
-                    cherry smoked.<br />
-                    <strong>2pc $8.99 | 3pc $10.99 | 4pc $12.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Brisket Platter</h3>
-                <p>
-                    Half pound of our competition style
-                    brisket. <strong>$15.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Not sure? Try our combo!</h3>
-                <p>
-                    3 oz's of our Brisket and pulled pork and
-                    a chicken leg. <strong>$15.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>St Louis Ribs</h3>
-                <p>
-                    Our ribs start with QDogs dry rub then misted with our apple juice based spritz and finished
-                    with QDogs competition rib glaze. These are a thing of beauty and taste even better!<br />
-                    <strong>Full Rack $23.99 | Half Rack $16.99 | Quarter Rack $10.99 | 2 Bone(ribs only) $3.99</strong>
-                </p>
-            </section>
-        </article>
+            <article id="meals" class="tabcontent">
+                <h2>Meals</h2>
+                <p><em>Comes with two sides and corn bread.<br />
+                    Add a sausage for 2.99 or two bones for 3.99</em></p>
+                <section>
+                    <h3>Pulled Pork</h3>
+                    <p>
+                        Half pound of or our slow smoked pulled
+                        pork <strong>$10.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Chicken Legs & Thighs</h3>
+                    <p>
+                        Lightly dusted with our garlic rub and
+                        cherry smoked.<br />
+                        <strong>2pc $8.99 | 3pc $10.99 | 4pc $12.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Brisket Platter</h3>
+                    <p>
+                        Half pound of our competition style
+                        brisket. <strong>$15.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Not sure? Try our combo!</h3>
+                    <p>
+                        3 oz's of our Brisket and pulled pork and
+                        a chicken leg. <strong>$15.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>St Louis Ribs</h3>
+                    <p>
+                        Our ribs start with QDogs dry rub then misted with our apple juice based spritz and finished
+                        with QDogs competition rib glaze. These are a thing of beauty and taste even better!<br />
+                        <strong>Full Rack $23.99 | Half Rack $16.99 | Quarter Rack $10.99 | 2 Bone(ribs only) $3.99</strong>
+                    </p>
+                </section>
+            </article>
 
-        <article id="yummies" class="tabcontent">
-            <h2>Other Yummies</h2>
-            <section>
-                <h3>White Chicken Chili</h3>
-                <p>
-                    Our award winning chili get some while
-                    supplies last! Add a piece of corn bread
-                    and honey butter for $1.49<br />
-                    <strong>Bowl $7.99 | Cup $5.99</strong> 
-                </p>
-            </section>
-            <section>
-                <h3>Chicken Tenders</h3>
-                <p>
-                    Four lightly breaded chicken breast
-                    tenders fried golden brown. Choice of
-                    one side. <strong>$8.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Meat Sampler</h3>
-                <p>
-                    Quarter pound of our pulled pork, quarter
-                    pound of our brisket and two rib bones.
-                    Served with garlic toast. <strong>$13.99</strong>
-                </p>
-            </section>
-            <section>
-                <h3>BBQ Sundae</h3>
-                <p>
-                    Three layers of goodness stuffed in a
-                    Mason jar. Smoked beans, apple cider
-                    slaw, pulled pork, pickle spear and
-                    drizzled with house sauce. Served with
-                    cornbread. <strong>$8.99</strong>
-                </p>
-            </section>
-        </article>
+            <article id="yummies" class="tabcontent">
+                <h2>Other Yummies</h2>
+                <section>
+                    <h3>White Chicken Chili</h3>
+                    <p>
+                        Our award winning chili get some while
+                        supplies last! Add a piece of corn bread
+                        and honey butter for $1.49<br />
+                        <strong>Bowl $7.99 | Cup $5.99</strong> 
+                    </p>
+                </section>
+                <section>
+                    <h3>Chicken Tenders</h3>
+                    <p>
+                        Four lightly breaded chicken breast
+                        tenders fried golden brown. Choice of
+                        one side. <strong>$8.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Meat Sampler</h3>
+                    <p>
+                        Quarter pound of our pulled pork, quarter
+                        pound of our brisket and two rib bones.
+                        Served with garlic toast. <strong>$13.99</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>BBQ Sundae</h3>
+                    <p>
+                        Three layers of goodness stuffed in a
+                        Mason jar. Smoked beans, apple cider
+                        slaw, pulled pork, pickle spear and
+                        drizzled with house sauce. Served with
+                        cornbread. <strong>$8.99</strong>
+                    </p>
+                </section>
+            </article>
 
-        <article id="QPups" class="tabcontent">
-            <h2>QPups</h2>
-            <p><em>These items are for the lil pups 12 and under.<br />
-                All meals come with a drink and fries or tots</em></p>
-            <section>
-                <h3>Mini Corn Dogs</h3>
-                <p><strong>5.99</strong></p>
-            </section>
-            <section>
-                <h3>Two Pork Sliders</h3>
-                <p><strong>5.99</strong></p>
-            </section>
-            <section>
-                <h3>Two Chicken Tenders</h3>
-                <p><strong>5.99</strong></p>
-            </section>
-        </article>
+            <article id="QPups" class="tabcontent">
+                <h2>QPups</h2>
+                <p><em>These items are for the lil pups 12 and under.<br />
+                    All meals come with a drink and fries or tots</em></p>
+                <section>
+                    <h3>Mini Corn Dogs</h3>
+                    <p><strong>5.99</strong></p>
+                </section>
+                <section>
+                    <h3>Two Pork Sliders</h3>
+                    <p><strong>5.99</strong></p>
+                </section>
+                <section>
+                    <h3>Two Chicken Tenders</h3>
+                    <p><strong>5.99</strong></p>
+                </section>
+            </article>
 
-        <article id="sidesDesserts" class="tabcontent">
-            <h2>Sides</h2>
-            <section>
-                <h3>Apple Cider Slaw - A must try!</h3>
-                <p>
-                    This is our very own
-                    apple cider vinegar
-                    coleslaw. <strong>$2.29</strong>
+            <article id="sidesDesserts" class="tabcontent">
+                <h2>Sides</h2>
+                <section>
+                    <h3>Apple Cider Slaw - A must try!</h3>
+                    <p>
+                        This is our very own
+                        apple cider vinegar
+                        coleslaw. <strong>$2.29</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Tator Salad</h3>
+                    <p>
+                        Hearty steak house style
+                        potato salad <strong>$2.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Sweet Southern Cornbread</h3>
+                    <p>
+                        Served with whipped Honey Butter. 
+                        Local grown honey! <strong>$2.29</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Q Fries or Tots</h3>
+                    <p>
+                        Fries or Tots dusted with
+                        our signature brisket rub.
+                    <strong>$3.99</strong>
                 </p>
-            </section>
-            <section>
-                <h3>Tator Salad</h3>
+                </section>
+                <section>
+                    <h3>Smoked Beans</h3>
+                    <p>
+                        Loaded with our pulled
+                        pork <strong>$2.39</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Cheesy Party Tators</h3>
+                    <p>
+                        Smoked to a melty
+                        goodness. <strong>$2.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Cootage Cheese</h3>
+                    <p>
+                        From our friends at
+                        Homestead Dairy <strong>$2.49</strong>
+                    </p>
+                </section>
+                <h2>Desserts</h2>
                 <p>
-                    Hearty steak house style
-                    potato salad <strong>$2.49</strong>
+                    We Proudly Serve Kathy's Pies! Ask server for today's flavors. 
+                    <strong>Slice $3.99</strong> 
                 </p>
-            </section>
-            <section>
-                <h3>Sweet Southern Cornbread</h3>
-                <p>
-                    Served with whipped Honey Butter. 
-                    Local grown honey! <strong>$2.29</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Q Fries or Tots</h3>
-                <p>
-                    Fries or Tots dusted with
-                    our signature brisket rub.
-                <strong>$3.99</strong>
-            </p>
-            </section>
-            <section>
-                <h3>Smoked Beans</h3>
-                <p>
-                    Loaded with our pulled
-                    pork <strong>$2.39</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Cheesy Party Tators</h3>
-                <p>
-                    Smoked to a melty
-                    goodness. <strong>$2.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Cootage Cheese</h3>
-                <p>
-                    From our friends at
-                    Homestead Dairy <strong>$2.49</strong>
-                </p>
-            </section>
-            <h2>Desserts</h2>
-            <p>
-                We Proudly Serve Kathy's Pies! Ask server for today's flavors. 
-                <strong>Slice $3.99</strong> 
-            </p>
-        </article>
+            </article>
 
-        <article id="drinks" class="tabcontent">
-            <h2>Drinks</h2>
-            <section>
-                <h3>Non-Alcholic Drinks</h3>
-                <p>
-                    Pepsi Products | Dr Pepper | Lemonade | 
-                    Fresh Brewed Ice Tea | Southern Sweet Tea<br />
-                    <strong>$2.49</strong>
-                </p>
-            </section>
-            <section>
-                <h3>Beer, Wine, Spirits</h3>
-                <p>
-                    Ask your server for a cocktail menu
-                </p>
-            </section>   
-        </article>
+            <article id="drinks" class="tabcontent">
+                <h2>Drinks</h2>
+                <section>
+                    <h3>Non-Alcholic Drinks</h3>
+                    <p>
+                        Pepsi Products | Dr Pepper | Lemonade | 
+                        Fresh Brewed Ice Tea | Southern Sweet Tea<br />
+                        <strong>$2.49</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Beer, Wine, Spirits</h3>
+                    <p>
+                        Ask your server for a cocktail menu
+                    </p>
+                </section>   
+            </article>
+        </main>
         <script src="js/script.js"></script>
-        </body>
-        </html>
+    </body>
+</html>

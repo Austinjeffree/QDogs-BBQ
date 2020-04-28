@@ -52,3 +52,18 @@ main>figure>img {
 
 /* CSS Below this line will impact MENU page only */
 
+#menuFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* CSS Below this line will impact CATERING page only */
+
+#cateringFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
