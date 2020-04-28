@@ -26,49 +26,26 @@
                 </p>
             </section>
             <form action="https://formspree.io/mwkqpkjy" method="POST"> <!--3rd party being used to record submits-->
-                <fieldset>
                     <legend>Request a quote</legend>
-                    <label for="name">
-                        First & Last Name:
-                    </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your First & Last name" required="required">
-                    
-                    <label for="telephone">
-                        Phone Number:
-                    </label>
-                    <input type="tel" name="phone" id="telephone" placeholder="Enter your phone number">
-                    
-                    <label for="email">
-                        Email:
-                    </label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address" required="required">
-                    
-                    <label for="date">
-                        Date:
-                    </label>
-                    <input type="date" name="date" id=date>
-                    
-                    <label for="time">
-                        Time:
-                    </label>
-                    <input type="time" name="time" id="time">
-                    
-                    <label for="headcount">
-                        Headcount:
-                    </label>
-                    <input type="number" name="headcount" id="headcount" placeholder="Enter headcount">
-                    
-                    <label for="comment">
-                        Additional Information:
-                    </label>
-                    <input type="text" name="comment" id="comment" required="required">
+                    <h3>First & Last Name:</h3>
+                    <input type="text" name="name" placeholder="Enter your First & Last name" required="required">
+                    <h3>Phone Number:</h3>
+                    <input type="tel" name="phone" placeholder="Enter your phone number">
+                    <h3>Email:</h3>
+                    <input type="email" name="email" placeholder="Enter your email address" required="required">
+                    <h3>Date & Time:</h3>
+                    <input type="date" name="date"><br />
+                    <input type="time" name="time">
+                    <h3>Headcount:</h3>
+                    <input type="number" name="headcount" placeholder="Enter headcount">
+                    <h3>Additional Information:</h3>
+                    <input type="text" name="comment" required="required">
                     <p>
                         Please be as detailed as possible. Include information such as menu items,
                         date & time, number of people you are feeding, and contact information.  
                     </p>
-                    <input type="submit" value="Request">
+                    <input type="submit" value="Submit">
                 </fieldset>
-            </form>
         </main>
     </body>
 </html>

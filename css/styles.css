@@ -30,11 +30,10 @@ nav>h1 {
 
 
 
-/* CSS below this line will impact home page only */
-main {
+/* CSS below this line will impact HOME page only */
+#homeFlex {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     text-align: center;
 
@@ -44,10 +43,12 @@ main>figure>img {
     height: auto;
 }
 
-/* CSS Below this line will impact music page only */
+/* CSS Below this line will impact MUSIC page only */
 #musicFlex {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* CSS Below this line will impact MENU page only */
 
