@@ -50,8 +50,18 @@ main>figure>img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
 }
 
+.musicImage {
+    width: 100%;
+    height: auto;
+}
 /* CSS Below this line will impact MENU page only */
 
 #menuFlex {
