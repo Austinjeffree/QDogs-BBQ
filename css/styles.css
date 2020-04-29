@@ -3,7 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 /* CSS below this line will impact all pages */
-
+body {
+    background-image: url(../images/wood.jpg);
+    background-attachment: fixed;
+    background-size: 100% auto;
+    }
 header {
     display: flex;
     justify-content: center;
