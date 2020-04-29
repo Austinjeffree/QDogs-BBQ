@@ -38,8 +38,8 @@ nav>h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
+
 main>figure>img {
     width: 100%;
     height: auto;
@@ -51,6 +51,7 @@ main>figure>img {
     flex-direction: column;
     align-items: center;
 }
+
 /* CSS Below this line will impact MENU page only */
 
 #menuFlex {
@@ -111,7 +112,7 @@ main>figure>img {
 }
 
 
-/* CSS Bewow this line will be for bigger screens */
+/* CSS Below this line will be for BIGGER screens */
 @media only screen and (min-width: 600px) {
     /*CSS below this line will impact ALL PAGES */
     header {
@@ -199,4 +200,24 @@ main>figure>img {
         background-color: gray;
     }
 
+    /*CSS Below this line will impact CATERING page only */
+    #cateringFlex {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: green;
+        text-align: left;
+    }
+    #cateringFlex > section {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    #cateringFlex > form {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
 }

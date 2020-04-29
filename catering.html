@@ -18,32 +18,29 @@
 <!-- Content above this needs to remain the same each page (excluding the header/varies by page)-->
         <main id="cateringFlex">
             <section>
-                <h2>Catering Contact:</h2>
+                <h3>Request A Quote:</h3>
                 <p>
                     Choose QDogs catering for your next event whether it be for a business function, a delcious bite on your wedding day,
-                    or you need a food truck for a festival you're organizing, we have all your catering needs handled.For questions concerning catering please see below.<br />
+                    or a food truck for a festival you're organizing, we have all your catering needs handled. For questions concerning catering please see below.<br />
                     <b>Call:</b> (319) 826-6668<br /><b>E-Mail:</b> catering@qdogsbbqcompany.com
                 </p>
             </section>
-            <form action="https://formspree.io/mwkqpkjy" method="POST"> <!--3rd party being used to record submits-->
-                    <legend>Request a quote</legend>
-                    <h3>First & Last Name:</h3>
+            <form action="https://formspree.io/mwkqpkjy" method="POST" target="_blank"> <!--3rd party being used to record submits-->
+                    <h3>Name:</h3>
                     <input type="text" name="name" placeholder="Enter your First & Last name" required="required">
-                    <h3>Phone Number:</h3>
+                    <h3>Number:</h3>
                     <input type="tel" name="phone" placeholder="Enter your phone number">
                     <h3>Email:</h3>
                     <input type="email" name="email" placeholder="Enter your email address" required="required">
-                    <h3>Date & Time:</h3>
-                    <input type="date" name="date"><br />
-                    <input type="time" name="time">
-                    <h3>Headcount:</h3>
-                    <input type="number" name="headcount" placeholder="Enter headcount">
-                    <h3>Additional Information:</h3>
-                    <input type="text" name="comment" required="required">
+                    <h3>Event Date:</h3>
+                    <input type="date" name="date" required="required"><br />
+                    <h3>Details:</h3>
+                    <textarea rows="3" cols="25"  name="details" placeholder="Include desired menu items, headcount, time of day, delivery, etc." required="required"></textarea>
+                    <!-- <input type="text" name="comment" required="required">
                     <p>
                         Please be as detailed as possible. Include information such as menu items,
                         date & time, number of people you are feeding, and contact information.  
-                    </p>
+                    </p> -->
                     <input type="submit" value="Submit">
                 </fieldset>
         </main>
