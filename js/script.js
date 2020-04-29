@@ -4,7 +4,7 @@ function openMenu(evt, menuName) {
     var i, tabcontent, tablinks; 
     /* assign the tab content to varible */
     tabcontent = document.getElementsByClassName("tabcontent");
-    /* itterate through the content and change is tab display to none */
+    /* itterate through the content and changes tab display to none */
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
@@ -16,6 +16,6 @@ function openMenu(evt, menuName) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     /* change the display for the clicked tab to ignore prior display properties in place */
-    document.getElementById(menuName).style.display = "block";
+    document.getElementById(menuName).style.display = "grid";
     evt.currentTarget.className += " active";
   }
