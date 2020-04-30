@@ -34,7 +34,11 @@ nav>h1 {
     align-self: center;
 }
 
-
+/*Classes below this line can be used on any page */
+.blackBackground {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
 
 /* CSS below this line will impact HOME page only */
 #homeFlex {
@@ -56,6 +60,7 @@ main>figure>img {
     align-items: center;
     max-width: 800px;
 }
+
 .container {
     width: 100%;
     height: auto;
@@ -159,19 +164,18 @@ main>figure>img {
     #homeGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
+        grid-template-rows: 1fr auto;
     }
     #hours {
         grid-area: 2/1/3/2;
-        max-width: 350px;
+        margin-right: 10px;
     }
     #contact {
         grid-area: 2/2/3/3;
-        max-width: 350px;
     }
     #about {
-        grid-area: 1/1/2/3;        
+        grid-area: 1/1/2/3;
+        margin-bottom: 10px;        
     }
     /* CSS below this line is for MENU PAGE */
     .tab {
@@ -221,11 +225,10 @@ main>figure>img {
         max-width: 800px;
         margin-right: auto;
         margin-left: auto;
-        background-color: green;
         text-align: left;
     }
     #cateringFlex > section {
-        max-width: 200px;
+        max-width: 300px;
         width: 100%;
         height: auto;
     }
@@ -239,6 +242,7 @@ main>figure>img {
     #musicFlex {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         margin-right: auto;
         margin-left: auto;
     }
