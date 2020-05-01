@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 /* CSS below this line will impact all pages */
 body {
@@ -11,8 +12,8 @@ body {
 }
 header {
     text-align: center;
-    width: 100%;
     margin: 0px auto 10px auto;
+    width: 100%;
     max-width: 800px;
 }
 #logo {
@@ -21,24 +22,28 @@ header {
 }
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0px 10px;
     font-family: 'Fredericka the Great', cursive;
-    font-size: 20px;
+    font-size: 25px;
 } 
+nav>h1 {
+    font-size: 25px;
+}
 nav > a {
     color: white;
     text-shadow: 4px 0px black;
 }
-
 nav > a:hover {
     color: red;
     text-shadow: none;
 }
-nav>h1 {
-    font-size: 30px;
+
+p {
+    font-family:  'Gochi Hand';
+    color: black;
+    font-size: 20px;
 }
 
 /*Classes below this line can be used on any page */
@@ -48,9 +53,6 @@ nav>h1 {
     color: red;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-}
-p {
-    color: black
 }
 
 /* CSS below this line will impact HOME page only */
@@ -73,18 +75,18 @@ main>figure>img {
 #musicFlex {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: stretch;
     margin: 10px;
     max-width: 800px;
-
-    
+}
+iframe {
+    width: 100%;
+    height: 375px;
 }
     /*---Classes between these line specific to carousel---*/
 .container {
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 425px;
     margin-bottom: 10px;
     border: black 1px solid;
     padding: 0px;
@@ -98,36 +100,22 @@ main>figure>img {
 #menuFlex {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 10px;
     max-width: 800px;
 }
 .tab {
     width: 100%;
     height: auto;
-    text-align: center;
-    /* for the tab bar that buttons sit in*/    
-}
-#menuFlex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    max-width: 800px;
-}
-.tab {
-    width: 100%;
-    height: auto;
-    text-align: center;
+    font-size: 18px ;
     /* for the tab bar that buttons sit in*/    
 }
 .tab button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
+    font-family: 'Oswald', sans-serif;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    font-family: 'Oswald', sans-serif;
     /* for the buttons in the tab bar*/
 }
 .tab button:hover {
@@ -145,13 +133,19 @@ main>figure>img {
     height: auto;
     /* content that disappears/appears as you click between tabs */
 }
+.tabcontent > h2 {
+    color: black;
+}
+
+strong {
+    font-family:  'Gochi Hand';
+
+}
 
 /* CSS Below this line will impact CATERING page only */
 #cateringFlex {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     margin: 10px;
 }
 
@@ -166,10 +160,7 @@ main>figure>img {
     }
     nav {
         width: 100%;
-        font-size: 1.75em;
-    }
-    nav > h1 {
-        font-size: 1.75em;
+        font-size: 40px;
     }
     /*CSS Below this line will be for HOME page only*/
     #homeFlex {
@@ -195,32 +186,31 @@ main>figure>img {
     #musicFlex {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
         align-items: center;
         margin: 0px auto;
     }
     iframe {
         align-self: flex-start;
+        border-left: red 2px solid;
+        max-width: 300px;
+
+
     }
     .container {
         margin-bottom: 0px;
+        min-width: 425px;
+        max-width: 500px
     }
 
     /* CSS below this line is for MENU PAGE */
     #menuFlex { 
         margin: 0px auto;
     }
-    .tab {
-        font-size: 1.50em;
-    }
     .tabcontent {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        max-width: 800px;
         width: 100%;
         height: auto;
-        align-items: stretch;
-        text-align: center;
     }
     .tabcontent > h2 {
         grid-area: 1/1/2/3;
@@ -231,20 +221,21 @@ main>figure>img {
     .tabcontent > section {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 5px;
         padding: auto;
-        border: black solid 1px;
-
+    }
+    .tab {
+        font-size: 1.50em;
     }
     .tabcontent > section.hotMenuItem {
-        border: solid #ea1b23 3px;
-        color: #ea1b23;
-    
+        border: solid red 3px;
+    }
+    section.hotMenuItem > p {
+        color: red;
     }
     .tabcontent> section.highlightMenuItem {
-        background-color: gray;
+        background-color: rgba(255, 0, 0, .25);
+        color: black;
     }
     /*CSS Below this line will impact CATERING page only */
     #cateringFlex {
