@@ -71,6 +71,29 @@ main>figure>img {
     border: red 2px solid
 }
 
+    /* CSS between these lines for social media buttons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+  /* Facebook icon */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  /*twitter icon */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* CSS between this comment line and the one above it are social media buttons */
+
 /* CSS Below this line will impact MUSIC page only */
 #musicFlex {
     display: flex;
@@ -94,7 +117,7 @@ iframe {
 .musicImage {
     width: 100%;
 }
-    /*---Classes between these line specific to carousel---*/
+    /*CSS between this comment line and the one above it are specific to carousel*/
 
 /* CSS Below this line will impact MENU page only */
 #menuFlex {
@@ -148,6 +171,9 @@ strong {
     flex-direction: column;
     margin: 10px;
 }
+form >input {
+    font-size: 20px;
+}
 
 /* CSS Below this line will be for BIGGER screens */
 @media only screen and (min-width: 600px) {
@@ -162,6 +188,9 @@ strong {
         width: 100%;
         font-size: 40px;
     }
+    nav>h1 {
+        font-size: 40px;
+    }
     /*CSS Below this line will be for HOME page only*/
     #homeFlex {
         margin: auto;
@@ -173,7 +202,7 @@ strong {
     }
     .hItem1 {
         grid-area: 1/1/2/2;
-        margin-right: 10px;
+        margin-right: 10px;        
     }
     .hItem2 {
         grid-area: 1/2/2/3;
@@ -246,7 +275,7 @@ strong {
         text-align: left;
     }
     #cateringFlex > section {
-        max-width: 325px;
+        max-width: 400px;
         width: 100%;
         height: auto;
     }
