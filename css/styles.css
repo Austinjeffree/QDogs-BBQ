@@ -280,3 +280,19 @@ form >input {
         height: auto;
     }
 }
+
+@media print {
+    .tab, header {
+        display: none;
+    }
+
+    .tabcontent {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        margin: 2cm;
+    }
+}
+@page {
+    margin: auto;
+  }
