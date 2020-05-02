@@ -174,8 +174,9 @@ strong {
     flex-direction: column;
     margin: 10px;
 }
-form >input {
+input, textarea {
     font-size: 20px;
+    font-family: sans-serif;
 }
 
 /* CSS Below this line will be for BIGGER screens */
