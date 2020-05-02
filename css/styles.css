@@ -180,7 +180,7 @@ input, textarea {
 }
 
 /* CSS Below this line will be for BIGGER screens */
-@media screen and (min-width: 6in) {
+@media screen and (min-width: 600px) {
     /*CSS below this line will impact ALL PAGES */
     header { 
         display: flex;
